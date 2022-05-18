@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!-- iframe
+		; 윈도우 또는 간단한 윈도우라고 한다.
+		
+		<iframe>
+			-속성
+				.src=""
+				.srcdoc="HTML문서텍스트"	(코드)
+				.name="윈도우 이름"
+				.width=""
+				.height=""
+				.frameborder=""		(윈도우 외곽선; 0:없다, 1:있다)
+				.marginwidth=""		윈도우창 너비여백 지정
+				.marginheight=""	윈도우창 높이여백 지정
+				
+		</iframe>
+		
+		*사용시 주의사항
+			.iframe 태그는 body태그 안에서만 사용된다.
+			.src 속성이 생략되면 브라우저에 iframe 영역이 만들어지기는 하지만 빈 상태로 존재한다.
+			.인라인 프레임이 출력할 HTML텍스트를 srcdoc속성에 직접 작성할 수 있지만, 이 때 src는 무시된다.
+			.인라인 프레임 안에 또 다른 인라인 프레임을 중첩하여 만들 수 있다.	
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>첫번째 프레임</title>
+</head>
+<body bgcolor="yellow">
+		<h2><font color="blue">두번째 iframe</font></h2>
+		
+		<iframe src="F1_2_1프레임.html" width="200" height="200"></iframe>
+		
+		
+		
+</body>
+</html>

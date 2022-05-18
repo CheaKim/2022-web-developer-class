@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--  
+	테이블의 형식
+	
+	<table>
+		<caption>제목</caption>					(가운데 정렬되어서 표시됨)
+		<tr><th></th><th></th><th></th></th> 	(표 맨앞에는 header(th), td 모두가능:글자 가운데 정렬)
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+	</table>
+	
+	<table>
+		<caption></caption>
+		<thead><th></th><th></th></thead>
+		<tbody><td></td><td></td></tbody>
+		<tfooter><td></td><td></td></tfooter>
+	</table>
+	
+	row:행
+	col:열
+	
+		테이블 속성			tr속성			td속성
+	-----------------------------------------------
+	align="정렬방식" 	align="정렬방식" 	align="정렬방식"
+	border="숫자"		valign="수직정렬"	valign="수직정렬"
+	width="숫자"		width="숫자"		width="숫자"
+	height="숫자"		height="숫자"		height="숫자"
+	
+	cellpadding="숫자" 셀테두리와 셀내용 사이의 간격
+	cellspacing="숫자" 각 셀간의 간격
+	
+	background="경로" background="경로> background="경로"
+	bgcolor="색상"	bgcolor="색상"	bgcolor="색상"
+	
+									rowspan="숫자" 세로방향으로 합쳐지는 셀의 개수
+									colspan="숫자" 가로방향으로 합쳐지는 셀의 개수
+	
+	border="숫자" 테이블선의 굵기
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 생성</title>
+</head>
+
+<body>
+
+	<table border="1">  <!-- border=선 -->
+		<caption>5월 달력</caption>
+		
+		<tr>
+		<th>월<!-- 1행1열 --></th><th>화<!-- 1행2열 --></th><th>수</th><th>목</th><th>금</th><th>토</th><th>일</th>
+		</tr>
+		<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr>
+		<tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+		<tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+		<tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
+		<tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
+		<tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr>
+	</table>
+
+</body>
+</html>
