@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!--  
+	비디오 종류
+		mp4: H.264비디와 ACC 오디오 코덱으로 인코딩된 MPEG4파일
+		webm:VP8/Vp9의 비디오와 Vorbis 오디오 코덱으로 인코딩된 WebM파일
+		ogg: Theora 비디오와 Vorbis 오디오 코덱으로 인코딩된 Ogg파일
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>비디오 (MP4)삽입</h3>
+	<hr>
+	<video src="img/Bear.mp4" align="center" width="600" height="300" controls type="video.mp4">
+	브라우저가 video 태그를 지원하지 않습니다.
+	</video>
+	
+	<pre>
+		width, height: 재생될 브라우저의 너비와 높이 (생략되면 원본크기)
+		controls : 재생, 재생시간, 중단, 음소거등 제어창 출력
+		autoplay : 비디오 로딩시 즉시 재생
+		loop	: 반복재생
+		muted	: 오디오를 끌 때 사용
+		
+	</pre>
+	
+	
+</body>
+</html>
