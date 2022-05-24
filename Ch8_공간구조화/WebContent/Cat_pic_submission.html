@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<header>
+	<h3>고양이 사진 투고 형식</h3>
+	<br>
+	필요한 사항을 기입한 후 투고 버튼을 눌러주세요
+	</header>
+	<article>
+		<table>
+			<tr>
+			<th>
+			고양이 이름
+			</th>
+			<td><input type="text">
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			<b>주소:</b>
+			</th>
+			<td>
+			<label for="address"></label>
+			<select id="address">
+				<option value="서울">서울</option>
+				<option value="부산">부산
+				</option>
+			</select>
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			<b>성별:</b>
+			</th>
+			<td>
+			<input type="radio" name="gender" value="남">남
+			<input type="radio" name="gender" value="여">여
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			좋아하는 것:
+			</th>
+			<td>
+			<input type="checkbox" checked="checked">고기사료
+			<input type="checkbox">야채사료
+			<input type="checkbox">생선사료
+			<input type="checkbox">곡류사료
+			<input type="checkbox">통조림
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			사진:
+			</th>
+			<td>
+			<input type="file" name="FileName">
+			</td>
+			</tr>
+			<tr>
+			<th>
+			기르는 주인이름:
+			</th>
+			<td>
+			<input type="text">
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			메일주소:
+			</th>
+			<td>
+			<input type="email" placeholder="info@example.com">
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			전화번호:
+			</th>
+			<td>
+			<input type="tel" placeholder="010-1234-5678">
+			</td>
+			</tr>
+			
+			<tr>
+			<th>
+			코멘트
+			</th>
+			<td>
+			<textarea rows="5" col="10"></textarea>
+			</td>
+			</tr>
+			
+		</table>
+		</article>
+		
+		<footer>
+		<small>Copyright & Copy;UCHI NO NYANS's All Rights Reserved </small>
+		<p>
+		<input type="reset" value="취소"> &nbsp;&nbsp; <input type="submit" value="보내기">
+		</footer>
+		
+
+</body>
+</html>

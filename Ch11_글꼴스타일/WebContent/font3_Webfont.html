@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--  
+	font-face (글꼴)
+		.기본글꼴이 아닌 경우 글꼴 파일이 없이는 화면에 적용할 수 없다.
+		.웹 폰트
+		
+			format					확장자
+			-------------------------------------
+			"truetype"				.ttf
+			"opentype"  			.ttf, .otf
+			"svg"					.svg
+			"woff"					.woff
+			"embedded-opentype"		.eot
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	@font-face{font-family: "NBrush";
+	src:url("nanumfont/NanumBrush.ttf") format("truetype");
+	}
+	
+	@font-face{font-family: "NPen";
+	src:url("nanumfont/NanumPen.ttf") format("truetype");
+	}
+	
+	h1{
+		text-align: center;
+		font: bold 5em "NBrush";
+	}
+	
+	h2{
+		text-align: center;
+		font: bold 2.3em "NPen";
+		color: mistyrose;
+	}
+</style>
+</head>
+<body>
+	<h1>혼자 할 수 있는 일은 많지 않다. 그래서 관계가 중요하다.</h1>
+	<h2>하루가 즐거우려면 이발을 해라! 1주일을 행복하게 살려면 차를 사라! 
+	한달을 행복하게 살려면 승마를 배워라! 1년을 행복하게 살려면 결혼을 해라!
+	평생 행복하려면 정직해라!
+	</h2>
+	
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>srcdoc에 HTML문서 작성하기</h2>
+	<hr>
+	
+	<iframe
+		src="F1_1프레임.html"
+		width="49%" height="600px"
+		srcdoc="<html><head></head><body bgcolor='yellow'> <!-- 쌍따옴표 안에 있으니 따옴표 사용 -->
+				<b>여기는 srcdoc로 만든 문서입니다. 
+				srcdoc가 설정되면 src설정은 무시됩니다.</b>
+				</body></html>"
+		
+		>
+		
+	</iframe>
+	
+	<iframe src="F1_2프레임.html" name="right"></iframe>
+</body>
+</html>

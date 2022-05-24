@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+	선택자 {속성명:속성값;}
+		.선택자의 종류
+			-타입 선택자: 태그 {	}
+			-선택자 그룹화: 태그, 태그, 태그,,{	}
+			-id선택자: #id명{	}
+			-Class 선택자: .class
+			-애스터리스크 선택자: *{	} (모든 것을 다 선택하는 것)
+			-자식 선택자:		선택자> 자식{	}
+			-인접 선택자: 선택자+인접{	}
+			-문맥(자손)선택자: 선택자 자손선택자 (단어 사이 스페이스바)
+			-속성 선택자: 태그 [속성]{	} ----- > h1[class], img[alt], *[title]
+			-가장클래스 선택자
+					;css에서 제공되는 40여종의 가상클래스 선택자
+					
+					.마우스	선택자:hover 마우스가 올라갔을 때의 스타일 적용
+							선택자:active 마우스를 누르고 있는 상황에서의 스타일
+					
+					.폼 요소	선택자:focus	폼요소가 키보드나 마우스 클릭으로 포커스를 받을 때 스타일
+					
+					.링크		선택자:link	방문하지 않은 링크에 스타일 적용
+							선택자:visited 방문한 후의 링크에 스타일 적용 (color, background-color,border-color 등 색관련만 가능)
+							
+					.블록		선택자 :first-letter	블록형 태그에서 첫글자에만 스타일 적용
+							선택자:first-line		블록형 태그의 첫번째 라인에 스타일 적용
+							
+					.구조		선택자: nth-child(even) 짝수번째 모든 자식 태그에 스타일 적용
+							선택자: nth-child(n) n번째 자식 태그에 스타일 적용
+							선택자: first-child
+							선택자: last-child
+							선택자: before		요소의 맨 앞에 배치하는 마크업에 없는 가상요소
+							선택자: after			요소의 맨 뒤에 배치하는 마크업에 없는 가상요소
+								
+					
+					
+					
+	
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p#style1{font-size: 15px; /* color: red;  */}
+	p#style2{font-size: 30px; color: aqua;}
+	font#style3{font-size: 25px; color: blue;}
+	
+	a:link{color:red;} /* 가상클래스선택자 */
+	
+	div span{color:orange; font-size: 30px;}	/* 문맥(자손)선택자 */
+	
+	/* 클래스선택자 */
+	.a{font-size: 20px; font-weight: bolder;}
+	
+	.b{font-size: 30px; color: blue; }
+	
+	
+</style>
+</head>
+<body>
+	<div>
+		<p id="style1" class="a b">화날 때는 <span>대답</span>하지 않기</p>
+		<p id="style2">기쁠 때는 약속하지 않기</p>
+		<h3 id="style3">슬플 때는 <span>결심</span>하지 않기</h3>
+		<font id="style3">항상 마음에 새기며 사시길...</font><br>
+		<a href="#">연결...</a>
+
+	</div>
+
+</body>
+</html>

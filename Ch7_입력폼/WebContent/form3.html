@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--  
+	form속성
+		.형식:<form 		 ></form>
+			-action:데이터를 처리할 프로그램의 url
+			-method:데이터를 서버에 전달하는 방식 (get/post)
+				.get(디폴트): 기본값, 데이터를 질의 문자열 (query string)형태로 서버에게 전달한다.
+							데이터양이 제한되고, 상대적으로 보안에 취약하다.
+				.post:	데이터를 메시지 바디에 포함시켜서 서버에 전달한다.
+						데이터의 양이 제한이 없고, 데이터 노출이 되지 않는다.
+			-name:폼 이름
+			-
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form name="form_info" method="post">
+		당신의 취미를 모두 고르시오.<br><br>
+		<input type="checkbox" name="hobby" value="게임" checked="checked">게임
+		<input type="checkbox" name="hobby" value="독서">독서
+		<input type="checkbox" name="hobby" value="먹기">먹기
+		<input type="checkbox" name="hobby" value="자기">자기
+		<input type="checkbox" name="hobby" value="놀기">놀기
+		<!-- hobby로 붙어있는 덩어리들, checkbox는 복수로 선택 가능 -->
+		<hr><br>
+		성&nbsp;별&nbsp;&nbsp;
+		<input type="radio" name="gender" value="남자">남자
+		<input type="radio" name="gender" value="여자" checked="checked">여자
+		<!-- radio는 중복선택 불가능, checked는 기본으로 선택되어 있는 것 -->
+		<hr><br>
+		학&nbsp;년&nbsp;&nbsp;
+		<input type="radio" name="year" value="1학년">1학년
+		<input type="radio" name="year" value="2학년">2학년
+		<input type="radio" name="year" value="3학년" checked="checked">3학년
+		<input type="radio" name="year" value="4학년">4학년
+		
+		<hr><br>
+		
+		<input type="submit" value="전송"><br>
+		<input type="reset" value="초기화">
+	</form>
+
+</body>
+</html>

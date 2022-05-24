@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--  
+	:first-letter:첫번째 글자
+	:first-line:첫번째 라인
+	:nth-child(n|odd|even)
+	:first_child
+	:last_child
+	:before
+	:after
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	p:first-letter {font-size: 300%;}
+	p{border-bottom: 3px dashed #0000ff}
+	p:last-child {border: none}
+	
+	.box>p:nth-child(even) {background-color: yellow;}
+	.box:after {content: "항목을 채워주세요"; color: red;}
+	.box:before {content: "삑삑";color: pink}
+
+</style>
+
+</head>
+<body>
+	<div class="box">
+		<p>COMPANY</p>	
+		<p>PRODUCT</p>	
+		<p>SERVICE</p>	
+		<p>OTHER</p>	
+	</div>
+	
+	<div>
+		<p>COMPANY</p>	
+		<p>PRODUCT</p>		
+	</div>
+	
+	
+</body>
+</html>
+
+

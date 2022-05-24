@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 
+	선택자[class^="member"] :member로 시작되는 
+	선택자[class$="mem"] :mem으로 끝나는 것
+	선택자[class*="mem"] :mem이 포함되어져 있는
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	li[class^="mem"]{color: #f00}
+	li[class$="er"]{color: aqua}
+	li[class*="mem"]{color: pink}
+
+	a[href^="http"]{color: green}
+</style>
+</head>
+<body>
+	<ul>
+		<li class="intro_member">class="intro_member"</li>
+		<li class="member_intro">class="member_intro"</li>
+		<li class="intro_mem_intro">class="intro_mem_intro"</li>
+	</ul>
+	
+	<ul>
+		<li><a href="#">일반링크</a></li>
+		<li><a href="http://www.google.com">외부사이트</a></li>
+	</ul>
+</body>
+</html>
