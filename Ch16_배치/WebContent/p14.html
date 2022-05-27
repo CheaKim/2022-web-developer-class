@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--  
+	floating box
+		.마치 공중에 떠 있는 것처럼 배치시키는 것.
+		
+		.주요속성
+			float: 	left		: 플로팅 박스를 왼쪽으로 배치시켜라
+					right		: 플로팅 박스를 오른쪽으로 배치시켜라
+					none(기본값)	: 지정안함
+					
+					
+			clear:  left		: left로 지정된 플로팅 박스를 해제
+					right		: right로 지정된 플로팅 박스를 해제
+					both		: 플로팅 박스를 둘다 한번에 해제
+
+
+
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#h{background: lightcoral;}
+	#c1{
+		background: mistyrose;
+		border: 2px solid pink;
+		width: 300px; height: 300px;
+		margin: 10px;
+		
+		float: left;}
+	#c2{
+		background: mistyrose;
+		border: 2px solid pink;
+		width: 300px; height: 400px;
+		margin: 10px;
+		
+		float: left;}
+		/* 이런식으로 left로 계속 주면 차곡차곡 쌓이고 마지막에 줄 맞추기 용으로 right 줌 */
+	#c3{
+		background: mistyrose;
+		border: 2px solid pink;
+		width: 300px; height: 500px;
+		margin: 10px;
+		
+		float: right;}
+		
+	#f{background: lavender; clear: both;}
+
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="h">header</div>
+		<div id="c1">content1</div>
+		<div id="c2">content2</div>
+		<div id="c3">content3</div>
+		<div id="f">footer</div>
+	
+	
+	</div>
+</body>
+</html>

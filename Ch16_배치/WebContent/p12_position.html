@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--  
+	position:static, absolute, relative, fixed
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 초기화 */
+	*{margin: 0; padding: 0;}
+	
+	/* 공통스타일 */
+	body{
+		font: 12px Helvetica,sans-serif;
+		margin: 20px;
+		background-image: url("img/bg_grid.gif");
+	}
+	
+	p{
+		width: 130px; height: 80px;
+		padding: 10px; color: indigo; font-weight: bolder;
+	}	
+	#box{
+		width: 550px; height: 300px;
+		background-image: url("img/bg_sasun.gif");
+		/* position: relative; 이거 있/없 중요함 기준점이 달라짐 */ 
+	}
+	/* 배치 */
+	/* 1.정적배치 */
+	.red{background: red; opacity: 0.5}
+	/* 2.절대배치 */
+	.blue{background: blue;position: absolute;left: 50px; top: 30px; opacity: 0.5; z-index: 5}
+	/* 3.상대배치 */
+	.green{background: green; position: relative;left: 30px; top:20px; z-index: 3}
+	/* 자리가 움직여도 원래 가지고 있는 공간을 차지하고 있음. */
+	
+	.orange{background: orange;}
+
+
+</style>
+</head>
+<body>
+	<div id="box">
+		<p class="red">정적배치</p>
+		<p class="blue">절대배치</p>
+		<p class="green">상대배치</p>
+		<p class="orange">박스</p>
+	</div>
+</body>
+</html>

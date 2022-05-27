@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Hyperlink에 관련된 것
+		-a 태그에 href=""를 활용한다.
+		-가상 선택자를 활용해서 스타일을 설정한다.
+			
+			a:link	:	클릭하지 않은 상태에서의 속성
+			a:visited	:	방문했던 상태에서의 속성
+			a:active	:	링크를 클릭하는 순간의 속성
+			a:hover	:	마우스를 링크 위에 올려놓을 때 속성
+			
+			*html에서는 link, vlink, alink에 따라서 글자색을 다르게 지정할 수 있다.
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>하이퍼링크</title>
+<style type="text/css">
+	a:link{color: blue; text-decoration: none; font-family: serif;}
+	a:visited{color: pink; text-decoration: none; font-family: fantasy;}
+	a:active{color: aqua;text-decoration: underline;font-family: 명조; font-style: italic;}
+	a:hover{color: maroon;text-decoration: underline;font-family: 궁서; font-style: italic;}
+</style>
+</head>
+<body style="font-weight: bolder; text-decoration: none; font-size: 20px">
+	<p><a href="https://www.naver.com/">네이버</a></p>
+	<p><a href="https://section.cafe.naver.com/">카페</a></p>
+	<p><a href="https://section.cafe.naver.com/cafe-home/cafes/themes/">영화</a></p>
+
+</body>
+</html>

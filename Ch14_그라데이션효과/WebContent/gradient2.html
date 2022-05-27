@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--  
+	원형(방사형) 그라데이션
+		.문법: radial-gradient(원/타원 크기 at 시작점,색상1, 색상2, ,,)	
+				-circle, ellipse
+				-크기
+					.closest-side:중심점에서 가까운 박스의 변에 내접.
+					.farthest-side:중심점에서 가장 먼 박스의 내접.
+					.closest-corner:중심점에서 가까운 박스 모서리에 내접.
+					.farthest-corner:중심점에서 가장 먼 박스의 모서리에 내접.
+							
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#circle1{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		color: white;
+		text-align: center;
+		background: radial-gradient(circle 40px at 60px 50px, white, black) 
+					/* 원	반지름	x	y,색상1,색상2 */
+	}
+	
+	#circle2{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 10px;
+		top: 250px;
+		color: white;
+		text-align: center;
+		background: radial-gradient(circle closest-side at center, white, red 55%,black) 
+					/* 원	반지름	x	y,색상1,색상2 */
+	}
+	
+	#ellipse1{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 450px;
+		top: 10px;
+		color: white;
+		text-align: center;
+		background: radial-gradient(ellipse 150px 80px at 20% 90%, white, red 55%, yellow 20%,black)
+	}
+	
+	#ellipse2{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 450px;
+		top: 250px;
+		color: white;
+		text-align: center;
+		background: radial-gradient(ellipse farthest-corner at center, white, red 55%, black) 
+					/* 원	반지름	x	y,색상1,색상2 */
+	}
+	
+	/* #circle2{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 10px;
+		top: 250px;
+		color: white;
+		text-align: center;
+		background:radial-gradient{circle closest-side at center, white, red 55%, black}
+	}
+	
+	#ellipse1{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 10px;
+		top: 250px;
+		color: white;
+		text-align: center;
+		background:radial-gradient{ellipse 150px 80px at 20% 90%, white, red 55%, yellow 20%,black}
+	}
+	
+	#ellipse2{
+		width: 400px;
+		height: 200px;
+		position: absolute;
+		left: 450px;
+		top: 250px;
+		color: white;
+		text-align: center;
+		background:radial-gradient{ellipse farthest-corner at center, white, red 55%, black}
+	} */
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="circle1">위치와 크기지정 원</div>
+		<div id="circle2">가장 가까운 변에 내접하는 원</div>
+	</div>
+	<div class="container">
+		<div id="ellipse1">위치와 크기지정 타원</div>
+		<div id="ellipse2">가장 먼 모서리에 내접하는 원</div>
+	</div>
+</body>
+</html>

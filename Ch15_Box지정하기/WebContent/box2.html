@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--  
+	배경이미지를 출력하는 위치기준
+		.background-origin:	padding-box:패딩왼쪽 위부터 위를 기준으로 출력
+		.border-box:border선부터 출력
+		.content-box:콘텐트박스 왼쪽 위부터 출력
+		
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{margin: 10px; padding: 20px; border: 15px solid rgba(0,128,128,0.5);
+		width: 350px; height: 50px; background-image: url("img/목도리고양이초상화.jpg");}
+		
+	code{font-family: Helvetica,sans-serif; font-weight: bold;font-size: 18px}
+	#sample1{background-clip: border-box;}
+	#sample2{background-clip: padding-box;}
+	#sample3{background-clip: content-box;}
+</style>
+</head>
+<body>
+	<div id="sample1"><code>border-box</code></div>
+	<div id="sample2"><code>padding-box</code></div>
+	<div id="sample3"><code>content-box</code></div>
+</body>
+</html>

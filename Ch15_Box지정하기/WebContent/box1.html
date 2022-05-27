@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--  
+	박스(Box)
+		;컨텐츠가 차지하는 영역이다.
+		
+		-width/height:content의 영역
+		-padding: 안쪽 여백
+		-border: 경계선
+		-margin: 바깥여백
+		
+		
+		.margin:10px - 상,하,좌,우 모두 10px
+		.margin:10px 5px - 상/하 10px, 좌/우5px
+		.margin:5px 10px 3px - 상 5px, 좌/우10px, 하3px
+		.margin:4px 5px 6px 7px - 상4px 우5px 하6px 좌7px
+		
+		.박스가 상하로 있을때...마진은 큰쪽으로 선택된다.
+		.박스가 옆으로 있을 때... 합산된다.
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box1</title>
+<style type="text/css">
+	body {
+	background-image: url("img/bg_grid.gif");
+	border: 10px solid blue;
+	margin: 10px; padding: 10px;
+	}
+
+	div{
+		margin: 0; padding: 30px; border-width: 0; background-color: green; opacity: 0.5;
+		width: 500px; height: 500px; 
+		opacity: 0.5;
+	
+		box-shadow: 10px 10px 1px yellow; /* 1px은 퍼짐의 정도 */
+	}
+	
+	#p1{
+		color: white;font-size: 300%; text-align: center;
+		width: 400px;height: 60px;background-color: #abc;
+		margin: 0; padding: 0;
+		margin-bottom: 20px ;
+	} /* 마진까지 포함한 박스가 바깥 박스의 content 범위 내에 들어가는 것 */
+	
+	#p2{
+		color: white;font-size: 300%; text-align: center;
+		width: 400px; height:60px; background-color: #abc;
+		margin: 0; padding: 0px;
+		margin-top: 30px;
+		
+		outline-width: 10px;
+		outline-style: solid;
+		outline-color: blue;
+	}
+</style>
+
+</head>
+<body>
+	<div>
+		<p id="p1">BOX1</p>
+		<p id="p2">BOX2</p>
+	</div>
+</body>
+</html>

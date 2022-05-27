@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--  
+	크기 정하기 -width, height
+		.html에서는 표, 이미지의 속성에 적용
+		.css는 다양한 태그에 width와 height 적용할 수 있다. ex)버튼의 크기, 문단, 표, 이미지 등
+		.인라인 태그에서는 width, height이 안먹힘
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{font: 30px Arial,"Times New Roman";color: #333; margin: 20px; 
+		background-image: url("img/bgphoto.jpg");background-size: cover;
+		background-repeat: no-repeat;}
+	li
+	{font-size: 40px; color: mistyrose; 
+	text-align:center; text-shadow: 3px 3px 1px gray;
+	list-style: none; box-shadow: 2px 2px 5px black; 
+	background-color:LightBlue; opacity: 0.6;
+	float:left;}
+	.h1{width: 100px; height: 140px; padding-top: 30px;
+		border-radius: 100px 0 0 100px;}
+	.h2{width: 200px; height: 70px; padding-top: 30px; 
+		border-radius: 100px 100px 0 0;}
+	.h3{width: 200px; height: 70px; padding-top: 30px;
+		border-radius: 0 0 100px 100px;}
+	.h4{width: 100px; height: 140px; padding-top: 30px;
+		border-radius: 0 0 140px 140px;}
+</style>
+</head>
+<body>
+	<ul>
+		<li class="h1">L</li>
+		<li class="h2">O</li>
+		<li class="h3">V</li>
+		<li class="h4">E</li>
+	</ul>
+</body>
+</html>

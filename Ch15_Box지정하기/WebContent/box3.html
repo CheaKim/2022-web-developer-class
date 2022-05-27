@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--  
+	배경이미지
+		background-size:
+			contain - 너비와 높이의 비율을 유지한 채 이미지 전체가 표시
+			cover - 너비와 높이의 비율을 유지한 채, 해당 이미지 하나만으로 전체영역을 덮는다.
+			auto - 너비와 높이의 비율을 유지한 채, 이미지의 크기다 변경된다.
+			실수값, % - 지정한 너비와 높이로 출력
+			
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{margin: 20px; padding: 20px 10px 5px 3px;
+		border: 15px solid rgba(139,0,0,0.5);
+		width: 350px; height: 50px; background-image: url("img/목도리고양이초상화.jpg");background-repeat: no-repeat;}
+	code{color: #ffffff;
+		font-family: Helvetica,sans-serif;
+		font-weight: bold;
+		font-size: 18px;
+		}
+	#sample1{background-size: contain;}
+	#sample2{background-size: cover;}
+	#sample3{background-size: auto 90px;}
+	#sample4{background-size: 100% 100px;}
+
+</style>
+</head>
+<body>
+	<div id="sample1"><code>contain</code></div>
+	<div id="sample2"><code>cover</code></div>
+	<div id="sample3"><code>auto 90%</code></div>
+	<div id="sample4"><code>100% 100%</code></div>
+</body>
+</html>

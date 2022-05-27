@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--  
+		display:flex - float하지만 더 깔끔하다.
+			flex-direction: row -1|2|3
+							row-reverse - 3|2|1
+							column- 위에서 아래
+							column-reverse -아래에서 위
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div[class]{margin: 10px; padding: 10px; width: 600px; height: 400px; background: #A6A6A6;}
+	div{width: 150px;height: 100px;margin: 2px; background: mistyrose; border-radius: 5px; text-align: center;
+		box-shadow: 1px 1px 2px;}
+	div.fr{display: flex;flex-direction: row;}
+	div.frr{display: flex;flex-direction: row-reverse}
+	div.fc{display: flex;flex-direction: column;}
+	div.fcr{display: flex;flex-direction: column-reverse;}
+
+</style>
+</head>
+<body>
+		<h3>flex-direction:row</h3>
+		<div class="fr">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<br><br>
+		
+		<h3>flex-direction:row-reverse</h3>
+		<div class="frr">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<br><br>
+		<h3>flex-direction:column</h3>
+		<div class="fc">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<br><br>
+		<h3>flex-direction:column-reverse</h3>
+		<div class="fcr">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<br><br>
+</body>
+</html>

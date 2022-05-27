@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--  
+	선형 그라데이션
+		.문법:linear-gradient(방향,색상,색상,,)
+			-방향은 각도, 또는 지정된 방향을 적용한다.
+							0도
+							to top
+		to top left			|			to top right
+							|
+							|
+		270도(to left)----------------90도 (to right)
+							|
+							|
+		to bottom left		|		to bottom right
+							180도
+							to bottom
+							
+							
+		시작점 0 ----------- 그라데이션 ----------------종료점
+	ex) red 0%		orange 10%   yellow 40%	    blue 100%
+		
+		
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gradient1</title>
+<style type="text/css">
+	div{
+		margin: 10px;
+		width: 250px;
+		height: 120px;
+		color: #ffff00;
+		font-family: Helvetica,sans-serif;
+		font-weight: bold;
+		box-shadow: 2px 2px 5px black;
+	
+	}
+	
+	#sample1{
+		background: linear-gradient(teal,navy,red,yellow);
+		
+	}
+	
+	#sample2{
+		background: linear-gradient(to bottom right,aqua,teal,navy);
+		
+	}
+	
+	#sample3{
+		background: linear-gradient(315deg,teal,navy); /* 315deg(각도) */
+		
+	}
+	
+	#sample4{
+		background: linear-gradient(to right,white,teal 20%,navy 70%,black);
+		
+	}
+	
+	
+	
+
+</style>
+</head>
+<body>
+	<div id="sample1">sample1</div>
+	<div id="sample2">sample2</div>
+	<div id="sample3">sample3</div>
+	<div id="sample4">sample4</div>
+</body>
+</html>

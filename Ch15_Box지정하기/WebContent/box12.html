@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--  
+	박스의 width를 설정하는 방법
+	
+		box-sizing
+			.content-box:기존 알고있는 width
+			.border-box:border를 포함하는 width
+			
+			
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 초기화 */ 
+	*{margin: 0; padding: 0;}
+	/*공통 */
+	div{width:200px ;height:200px ;margin:10px ;padding:10px ;
+		text-align: center; vertical-align: middle;}
+		
+	.contentbox{background-color: peachpuff; box-sizing: content-box; border:5px solid pink; }
+	.borderbox{background-color: paleturquoise; box-sizing: border-box;border: 5px solid darkturquoise}
+
+</style>
+</head>
+<body>
+	<div class="contentbox">기본박스(content박스)</div>
+	<div class="borderbox">border박스</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 초기화 */
+	*{margin: 0; padding: 0;}
+	li{list-style: none;}
+	
+	/* 공통 */
+	#container{
+	float: left; 
+	/* overflow:auto; */
+	/* height:600px; */
+	/* 가상의 요소를 넣어서 처리하는 방법 */
+	
+	width: 560px; border:1px solid blue; background-color: yellow;
+	}
+	
+	/* 개별스타일 */
+	.menu{float: left; width: 130px; padding: 10px;}
+	.content{float: right;width: 350px; padding: 10px; border-left: 1px solid #ccc;}
+	#footer{clear: both;}
+	address {font-size: small;padding: 10px;}
+
+</style>
+</head>
+<body>
+	<div id="container">
+		<div class="menu">
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">제품안내</a></li>
+				<li><a href="#">커뮤니티</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p>
+				이 제품은 어댑터와 본체가 분리되어 있는 대부분의 제품들이 갖는 불편함을 해소하는 데 큰 기여를 하고 있다. 
+				가장 많은 불편함은 어댑터 분실인데 이 제품은 usb크기의 잭만 꽂으면 센서로 
+				자동 충전되어 휴대도 간편한 복덩어리 노트북으로 불리고 있다. 이런 노트북은 이미 시중에 판매되고 있다.
+			</p>
+		
+		</div>
+	</div>
+	<div id="footer">
+		<address>&copy; 2022 Copyright All rights reserved.</address>
+	
+	</div>
+</body>
+</html>
